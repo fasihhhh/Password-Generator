@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="wrapper min-h-screen bg-green-900 flex justify-center items-center ">
+        <div class="password-box bg-blue-950 h-[480px] sm:h-[400px]  max-w-[95%] sm:w-[900px] p-2 flex flex-col justify-center items-center gap-8 sm:gap-6 rounded-[10px]">
+            <h1 class=" text-[1.8rem] sm:text-[1.9rem] bg-mber-100 w-[95%] sm:w-full font-bold p-1 bg-ambr-200 flex justify-center text-center underline text-white mb-2 mt-[-20px] sm:mt-0 sm:mb-0" >
+                Strong Password Generator
+            </h1> 
+            <div class="input-div w-full flex flex-row justify-center items-center ">
+                <input id="inputBox" class="bg-white w-[200px] h-[40px]  p-2 " type="text" placeholder="Password">
+                <img id="copyIcon" src="assets/copy.png" alt="" class="h-[40px] w-[40px] bg-white p-2 cursor-pointer hover:bg-slate-100">
+            </div>
+            <div id="yearDisplayDiv" class="yearDisplay text-white text-center text-[1.1rem] w-[70%]">
+                Time to crack this 17 character password (brute force) : 
+                <h1 id="yearsH1Tag" >0 Seconds</h1>
+            </div>
+            <button id="generateBtn" class="bg-slate-300 w-[100px] h-[38px] text-[1.1rem] rounded-[5px] flex items-center justify-center p-3 cursor-pointer text-black text-center mt-2 font-medium sm:mt-1 hover:bg-slate-500 hover:text-slate-100">Generate</button>
+        </div>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
